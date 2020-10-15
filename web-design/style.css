@@ -4,6 +4,23 @@
     --text-primary: #b6b6b6;
     --text-secondary: #919090;
     --bg-primary: #23232e;
-    --bg-secondary: #141418;
-    
+    --bg-secondary: #141418;    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: black;
+}
+body::-webkit-scrollbar{
+    width:0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(7, 7, 7);
+}
+body::-webkit-scrollbar-thumb{
+    background:rgb(124, 112, 206);
+}
+main{
+    margin-left:5rem;
 }
