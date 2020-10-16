@@ -85,11 +85,11 @@
   }
   
   .fa-primary {
-    color: #ff7eee;
+    color: #157be8;
   }
   
   .fa-secondary {
-    color: #df49a6;
+    color: #0697f8;
   }
   
   .fa-primary,
@@ -105,7 +105,7 @@
     color: var(--text-secondary);
     background: var(--bg-secondary);
     font-size: 1.5rem;
-    letter-spacing: 0.3ch;
+    letter-spacing: 0.2ch;
     width: 100%;
   }
   
