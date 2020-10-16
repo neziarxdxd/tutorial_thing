@@ -1,18 +1,42 @@
 :root {
-    font-size: 16px;
-    font-family: 'Open Sans';
+    font-size: 20px;
+    font-family: 'Poppins';
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 300ms;
   }
-  
+  .my-name{
+    font-weight: 900;
+  }
+  .title-bar{
+    font-size: 3rem;
+  }
+  .col-1{
+    float: left;
+    width:50%;
+    background-color: #0697f8;
+  }
+  .col-2{
+    float: left;
+    width: 50%;
+   
+  }
+  .row{
+    height: 100%;
+  }
+
   body {
-    color: black;
-    background-color: white;
+    color: var(--text-secondary);
+    background-color: var(--bg-secondary);
     margin: 0;
     padding: 0;
+  }
+  .row::after{
+    content: "";
+  clear: both;
+  display: block;
   }
   
   body::-webkit-scrollbar {
@@ -24,12 +48,14 @@
   }
   
   body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: #0697f8;
   }
   
   main {
+   
     margin-left: 5rem;
     padding: 1rem;
+    
   }
   
   .navbar {
@@ -105,7 +131,7 @@
     color: var(--text-secondary);
     background: var(--bg-secondary);
     font-size: 1.5rem;
-    letter-spacing: 0.2ch;
+    letter-spacing: 0.3ch;
     width: 100%;
   }
   
@@ -128,11 +154,16 @@
   
   /* Small screens */
   @media only screen and (max-width: 600px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+
     .navbar {
       bottom: 0;
       width: 100vw;
       height: 5rem;
     }
+
   
     .logo {
       display: none;
