@@ -14,18 +14,19 @@
     font-size: 3rem;
   }
   .col-1{
-    float: left;
+    float: right;
     width:50%;
-    background-color: #0697f8;
+    
   }
   .col-2{
-    float: left;
+    float: right;
     width: 50%;
    
   }
   .row{
     height: 100%;
   }
+  
 
   body {
     color: var(--text-secondary);
