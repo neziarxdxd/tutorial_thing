@@ -1,4 +1,4 @@
-name = "abcdc"
+name = "kebab"
 reverse = name[::-1]
 listBuild=[]
 for i in range(len(name)):
