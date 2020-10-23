@@ -1,5 +1,5 @@
 :root {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Poppins';
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
@@ -36,6 +36,7 @@
     min-height: 100%; 
     margin-left: 5rem;
     padding: 1rem;
+    
     
   }
   .footer{
@@ -171,7 +172,7 @@
     margin:50px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 30px;   
+    grid-gap: 20px;   
     align-items: center;
   }
   .grid-2 > .card{
@@ -185,6 +186,9 @@
 
 
 @media only screen and (max-width:1200px){
+  :root{
+    font-size: 20px;
+  }
   .grid-2{
     grid-gap: 100px;
     margin:25px;
@@ -211,6 +215,7 @@
   
   /* Small screens */
   @media only screen and (max-width: 600px) {
+
     [class*="col-"] {
       width: 100%;
     }
