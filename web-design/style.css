@@ -7,25 +7,6 @@
     --bg-secondary: #141418;
     --transition-speed: 300ms;
   }
-  .my-name{
-    font-weight: 900;
-  }
-  .title-bar{
-    font-size: 3rem;
-  }
-  .col-1{
-    float: right;
-    width:50%;
-    
-  }
-  .col-2{
-    float:left;
-    width: 50%;
-   
-  }
-  .row{
-    height: 100%;
-  }
   
 
   body {
@@ -34,11 +15,7 @@
     margin: 0;
     padding: 0;
   }
-  .row::after{
-    content: "";
-    clear: both;
-    display: table;
-  }
+ 
   
   body::-webkit-scrollbar {
     width: 0.25rem;
@@ -152,6 +129,43 @@
   .navbar:hover .logo svg {
     transform: rotate(-180deg);
   }
+
+  /* Created for main */
+  .grid{
+    margin:50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;   
+    align-items: center;
+  }
+  .grid > .card{
+    
+    box-shadow: 2px 2px 6px 0px rgb(24, 22, 22);
+    border-radius: 3px;   
+  }
+  .grid > .card img{
+    width: 100%;
+  }
+  /* fonts */
+  .title-bar{
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  .grid-2{
+    margin:50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;   
+    align-items: center;
+  }
+  .grid-2 > .card{
+    background-color: #0697f8;    
+    box-shadow: 2px 2px 6px 0px rgb(24, 22, 22);
+    border-radius: 3px;   
+  }
+
+
   
   /* Small screens */
   @media only screen and (max-width: 600px) {
@@ -211,18 +225,4 @@
   }
 
   
-  .theme-icon {
-    display: none;
-  }
   
-  .dark #darkIcon {
-    display: block;
-  }
-  
-  .light #lightIcon {
-    display: block;
-  }
-  
-  .solar #solarIcon {
-    display: block;
-  }
